@@ -1,0 +1,109 @@
+<script>
+  var style = document.createElement("style");
+  style.innerHTML = `
+    .caixa {
+        width: 400px;
+        height: 150px;
+        background-color: #38B6FF;
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+        margin-left: 3pt;
+        margin-right: 3pt;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .caixa2 {
+        background-color: #FFFFFF;
+        width: 390px;
+        height: 150px;
+        margin: 10px auto;
+        position: relative;
+        text-align: center;
+        animation: blink-animation 5s infinite;
+        margin-bottom: 10pt;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .caixa2 img {
+        width: 40px;
+        height: 60px;
+    }
+    .caixa3 img {
+        width: 90px;
+        height: 120px;
+    }
+
+    .botao-saiba-mais {
+        display: inline-block;
+        padding: 3px 6px;
+        background-color: #FFDD15;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+        border-radius: 2px;
+        font-size: 14px;
+    }
+
+    .texto {
+        color: #FFDD15;
+    }
+
+    @keyframes blink-animation {
+        0% { opacity: 1; }
+        33% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 8; }
+    }
+
+    /* Regras de mídia para dispositivos móveis */
+    @media (max-width: 767px) {
+        .caixa {
+            width: 15vw;
+        }
+
+        .caixa2 {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+        }
+
+        .caixa2 img {
+            width: 60px;
+            height: 90px;
+        }
+
+        .caixa3 img {
+            width: 120px;
+            height: 160px;
+        }
+
+        .texto {
+            margin-top: 10px;
+        }
+    }
+  `;
+
+  document.head.appendChild(style);
+</script>
+
+<div class="caixa">
+    <div class="caixa2">
+        <div class="caixa3 img">
+            <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/802/788/products/375f00cb09bf9594b828851a3236ded3awsaccesskeyidakiatclmsgfx4j7tu445expires1662947854signaturesjzsdyqhb0rco2ftkgq2flcaxeyzg3d-f95b8f84983d1d8d1f16603558596063-640-0." alt="Difusor Taiff Cuves">
+        </div>
+        <div class='texto'>
+            <b>
+                <p>DIFUSOR</p>
+                <p>TAIFF CURVES</p>
+                <p>R$65,00</p>
+            </b>
+        </div>
+        <a href="seu_link.html" class="botao-saiba-mais">Saiba Mais</a>
+        <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/802/788/themes/common/logo-438541829-1660338153-2a7b6b656ee7090394f54c333e3311b01660338154-320-0.png?0" alt="Clube do Eletronico">
+    </div>
+</div>
